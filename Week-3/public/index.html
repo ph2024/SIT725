@@ -20,7 +20,6 @@
           <a href="#" class="brand-logo">Logo</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>This button does nothing.</a></li>
-            <li><a href="sass.html">Sass</a></li>
           </ul>
         </div>
     </nav>      
@@ -30,12 +29,22 @@
         <a class="waves-effect waves-light btn click-me-button" id="changeColour">Change my background colour.</a>
     </div>
 
-    <H1>Server Test #1 - Are you sure?</H1>
-    <H4>Now in /Public</H4>
+    <H4>Server with chat functionality test #1</H4>
 
-    <!--JavaScript at end of body for optimized loading-->
+<!-- message input form from https://socket.io/get-started/chat -->
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+
+  <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/extra.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+</script>
+
   </body>
 </html>

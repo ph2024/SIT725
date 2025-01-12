@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bare bones</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>  
+
+    <body>
+        <form id="addTwoNumbers">
+            <label><b>Enter first number</b></label>
+            <input type="number" placeholder = "First number" name="firstNumber" id="num1"><br/>
+            <label><b>Enter second number</b></label>
+            <input type="number" placeholder = "Second number" name="secondNumber" id="num2"><br/>
+        </form>
+
+        <input type="submit" onclick="showCalculation();">
+        <br/><br/>
+
+        <label>First number entered: </label><span id='showNum1'></span>
+        <br/>
+        <label>Second number entered: </label><span id='showNum2'></span>
+        <br/><br/>
+
+        <label>Sum of numbers: </label>
+        <span id='showSum'></span>
+
+<!-- js Scripts -->
+        <script src="js/scripts.js"></script>
+        <script src="/socket.io/socket.io.js"></script>            
+    <!--<script src="js/socket.js"></script>-->
+
+        <script>
+
+            var socket = io();
+            
+        </script>
+
+    </body>
+</html>
