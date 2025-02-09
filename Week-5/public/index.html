@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>
+                Pizza DB
+            </title>
+
+            <link rel="stylesheet" href="css/styles.css">
+
+        </head>
+
+        <body>
+
+            <h2>Add pizza test page</h2> |
+
+            <h2>Create Pizza</h2>
+<!---->     <form id="addPizzaForm">
+                <label for="pizzaName">Pizza name</label>
+                <input type="text" id="pizzaName" placeholder = "Pizza Name" name="pizzaName" class="validate" required=""></br>
+
+                <label for="ingredient1">Enter first ingredient</label><span class="label" id="ing1"></span>
+                <input type="text" id="ingredient1" placeholder = "First ingredient" name="ingredient1" class="validate" required=""></br>
+
+                <label for="ingredient2">Enter second ingredient</label><span class="label" id="ing2"></span>
+                <input type="text" id="ingredient2" placeholder = "Second ingredient" name="ingredient2" class="validate" required=""></br>
+
+                <label for="ingredient3">Enter third ingredient</label><span class="label" id="ing3"></span>
+                <input type="text" id="ingredient3" placeholder = "Third ingredient" name="ingredient3" class="validate" required=""></br>
+
+                <label for="price">Price</label><span class="label" id="priceLabel"></span>
+                <input type="number" id="price" placeholder = "Price" name="price" class="validate" required=""></br>
+
+                <div class="row">
+                    <div><button type="submit" id="btnAddPizza">Add pizza</button></div>
+                </div>
+
+                <div class="row">
+                    <div class="error-msg-text" id="messageError"></div><div class="ok-msg-txt" id="messageOk"></div>
+                </div>
+            </form>
+<!--
+            <div class="row">
+                <div><button type="submit" id="btnPrintAllPizzas">Print all pizzas</button></div>
+            </div>
+
+            <div class="row">
+                <div><button type="submit" id="btnDeletePizzas">Delete all pizzas</button></div>
+            </div>
+-->
+            <script src="js/scripts.js"></script>
+
+        </body>
+
+    </html>
